@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <!--
-        Author:
-        Date:
-        Purpose:
+        Raymond Cantey 
+        2026-08-13
+        Purpose: To enhance a webpage with an interactive form, semantic structures, and foundational styling.
     -->
 
     <meta charset="UTF-8">
     <title>Collectable Books & Comics</title>
+    
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- INTERNAL CSS: Handles layout, spacing, and structure -->
     <style>
@@ -29,6 +32,7 @@
         .hero {
             padding: 40px;
             margin-bottom: 20px;
+            text-align: center; /* Added to center page header text */
         }
 
         /* Adds spacing between sections */
@@ -67,6 +71,7 @@
             padding: 8px;
             border: 1px solid;
             border-radius: 5px;
+            margin-bottom: 10px;
         }
 
         /* Button styling */
@@ -74,6 +79,7 @@
             padding: 10px;
             border: none;
             border-radius: 5px;
+            cursor: pointer;
         }
 
         /* Footer alignment and spacing */
@@ -141,15 +147,32 @@
     <!-- USER SIGN-UP FORM SECTION -->
     <section>
         <h2>Join the Collector Community</h2>
-
         <p>Sign up to receive updates on rare finds, new releases, and collector events.</p>
+        
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="genre">Favorite Genre:</label>
+            <select id="genre" name="genre">
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="mystery">Mystery</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
 </main>
 
 <!-- FOOTER SECTION -->
 <footer>
-    <p>© YEAR STUDENT_ID Archive — Built for passionate readers and avid collectors</p>
+    <p>© 2026-13-08-  raycan2849 — Built for passionate readers and avid collectors</p>
 </footer>
 
 </body>
